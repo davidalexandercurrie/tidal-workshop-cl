@@ -1,0 +1,32 @@
+d2 $ s "voodoo*3 bottle" # n "2 1 3 1" # vowel "a o e a" #gain "1.5 1.4 1.25 1.5" --olivia
+
+--ijon
+d1 $ sound "sugar sugar [psr psr]" #gain 0.8 # shape "0.5 0.8 [0.3 0.2]"
+d3 $ s "toys:1 ~ toys:3 " #distort 9 # gain 0.8
+d4 $ s "birds:0 birds:1" # gain 1 
+d4 $ s "bin bin bin" #gain 1
+
+--xuan
+d5 $ sound "<jazz bubble:5 casio glitch> [hh:5 hh:12] <diphone2, jazz>  hh:0" #room 0.7 # note "20 30 5 3" #gain 1.5
+
+--tuan
+d6 $ sound " bleep:5  drum*3 ~ tabla~ industrial"  #room 0.8 #djf 0.3 #hold 2
+
+--persia
+d7 $ sound "birds:6 ~ birds:2 birds:3 ~ ~ ~ ~" #gain "0.5 2 0.7" #distort "1"
+
+--julia
+xfade 1 $ s "arpy*4" <| up "c d e f g a b c6" #shape 0.8 #gain 0.4
+xfade 1 $ jux rev $ rarely (fast 2) $ s "arpy*8" # n (run 8)
+d6 $  s "808*4"
+d2 $ s "[bleep*2] blip bleep blip" #squiz 1
+d3 $ s "bass0" <| n (run 8)
+d4 $ s "superpiano*4"
+d5 $ s "breath" #gain 10
+d6 $ s "bass0*8"
+d7 $ slow 8 $ s "moog" <| n (run 7)
+
+--mai
+d8 $ s "off? off off [off [off off]]" # distort "0.9 0.2 0.4 0.7" # note "12 1 5 20" # gain 1.1
+
+hush
